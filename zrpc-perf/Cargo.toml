@@ -12,15 +12,15 @@ description = "fog05: The End-to-End Compute, Storage and Networking Virtualisat
 # To build with debug on macros: RUSTFLAGS="-Z macro-backtrace"
 
 [dependencies]
-async-std = { version = "=1.10.0", features = ["attributes"] }
+async-std = { version = "=1.9.0", features = ["attributes"] }
 futures = "0.3.5"
 syn = { version = "1.0.11", features = ["full"] }
 quote = "1.0.2"
 proc-macro2 = "1.0.6"
 serde_derive = "1.0.55"
 serde = { version = "1.0.55", features = ["derive"] }
-zenoh = { git = "https://github.com/eclipse-zenoh/zenoh.git", branch = "master"}
-zenoh-util = { git = "https://github.com/eclipse-zenoh/zenoh.git", branch = "master" }
+zenoh = "=0.5.0-beta.9"
+zenoh-util = "=0.5.0-beta.9"
 zrpc = {path = "../zrpc"}
 znrpc-macros = {path = "../znrpc-macros"}
 base64 = "0.13.0"
